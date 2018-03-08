@@ -12,8 +12,7 @@ class Stroke {
     target = new PVector(random(width), random(height));
   }
   
-  void draw() {
-    ellipse(p.x, p.y, 10, 10);
+  void update() {
     if (mousePressed) {
       if (dist(p.x, p.y, mouseX, mouseY) > 10) {
         if (speed < speedMax) speed += speedDelta;
@@ -28,6 +27,18 @@ class Stroke {
       p.x = lerp(p.x, target.x, speed/20.0);
       p.y = lerp(p.y, target.y, speed/20.0);
     }
+  }
+  
+  void draw() {
+    fill(0, 255, 0);
+    ellipse(p.x, p.y, 10, 10);
+    fill(0, 0, 255);
+    ellipse(p.x, p.y, 2, 2);
+  }
+  
+  void run() {
+    update();
+    draw();
   }
   
 }

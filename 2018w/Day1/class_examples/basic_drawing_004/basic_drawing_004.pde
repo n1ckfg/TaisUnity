@@ -12,6 +12,6 @@ void draw() {
   background(0);
   
   for (int i=0; i<numStrokes; i++) {
-    strokes[i].draw();
+    strokes[i].run();
   }
 }
