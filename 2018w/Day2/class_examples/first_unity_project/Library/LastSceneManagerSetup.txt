@@ -1,0 +1,4 @@
+sceneSetups:
+- path: C:/Users/nick/Documents/GitHub/TaisUnity/2018w/Day2/sixfeatures_unity/Assets/Scenes/sf1_variables.unity
+  isLoaded: 1
+  isActive: 1
